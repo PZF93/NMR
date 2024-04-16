@@ -6,12 +6,8 @@ from datetime import datetime
 import numpy as np
 import time
 
-DNP_frq = 188.0  # keep this the same for all DNP 
-#frq_list = [187.5,187.825,188.05,188.30,188.50]
-#frq_list = [187.5] #uw mixing frequency only
-#frq_list = [187.8]
-frq_list = [187.8,187.5]
-#frq_list = [187.5]
+DNP_frq = 187.8
+frq_list = np.linspace(187.5,188.5,41)
 mw_idx = -1
 #mw_pwr = 140
 pin_switch = 17
