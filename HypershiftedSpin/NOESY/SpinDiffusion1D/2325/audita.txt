@@ -1,0 +1,18 @@
+##TITLE= Audit trail, TopSpin 3.5 pl 7
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ /opt/topspin3.6.3/data/kirill/testing_cryo_magnet/2325/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2024-01-19 01:30:44.608 +0100>,<nmrsu>,<CZC5422SJ0>,<go4>,<TopSpin 3.5.7>,
+      <created by zg
+	started at 2024-01-19 00:30:32.275 +0100,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       A0 D1 29 C6 A7 FA 31 78 09 3F 9E CF FA C9 CD EC
+       data hash MD5: 512
+       6A 1A 42 87 01 10 FA 9F F0 8C A4 12 90 23 79 1C>)
+##END=
+
+$$ hash MD5
+$$ 3E 85 16 BB FA 35 3F BF 17 43 98 53 9D C1 DD 46
