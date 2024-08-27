@@ -1,0 +1,27 @@
+##TITLE= Parameter file, TopSpin 3.7.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 57	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ 2024-01-08 01:21:49.561 +0100  pzf20@MiniGua
+$$ C:/Users/pzf20/SynologyDrive/manuscripts/HiddenSpins/HiddenSpinData/NOESY/2223/acqu2s
+$$ process C:\Bruker\TopSpin3.7.0\prog\mod\dataserver.exe
+##$ACQT0= 0
+##$BF1= 500.13
+##$DE= 0.15625
+##$DECIM= 1
+##$DR= 16
+##$FW= 2016000
+##$FnMODE= 5
+##$NUC1= <1H>
+##$NusJSP= 0
+##$NusT2= 1
+##$NusTD= 48
+##$O1= -0
+##$ProjAngle= 0
+##$SFO1= 285.15
+##$SW= 7033.18367109995
+##$SW_h= 2000000
+##$TD= 48
+##END=

@@ -1,0 +1,47 @@
+##TITLE= Audit trail, TopSpin 3.5 pl 7
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ /opt/topspin3.6.3/data/kirill/testing_cryo_magnet/2223/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2024-01-07 06:57:08.900 +0100>,<nmrsu>,<CZC5422SJ0>,<go4>,<TopSpin 3.5.7>,
+      <created by zg
+	started at 2024-01-07 02:39:36.593 +0100,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       A0 D1 29 C6 A7 FA 31 78 09 3F 9E CF FA C9 CD EC
+       data hash MD5: 512 * 48
+       29 7C B7 18 7A 35 D1 3C 6A 67 03 D3 7A 89 93 1D>)
+$$ C:/Users/pzf20/SynologyDrive/manuscripts/HiddenSpins/HiddenSpinData/NOESY/2223/audita.txt
+(   2,<2024-01-08 01:12:14.858 +0100>,<pzf20>,<MiniGua>,<dataserver>,<TopSpin 3.7.0>,
+      <changed status parameter F1 IN_F from 0.40 to 0.5
+       data hash MD5: 512 * 48
+       29 7C B7 18 7A 35 D1 3C 6A 67 03 D3 7A 89 93 1D>)
+(   3,<2024-01-08 01:18:31.013 +0100>,<pzf20>,<MiniGua>,<dataserver>,<TopSpin 3.7.0>,
+      <changed status parameter F1 IN_F from 0.50 to 0.4
+       data hash MD5: 512 * 48
+       29 7C B7 18 7A 35 D1 3C 6A 67 03 D3 7A 89 93 1D>)
+(   4,<2024-01-08 01:19:31.764 +0100>,<pzf20>,<MiniGua>,<dataserver>,<TopSpin 3.7.0>,
+      <changed status parameter F1 IN_F from 0.40 to 0.5
+       data hash MD5: 512 * 48
+       29 7C B7 18 7A 35 D1 3C 6A 67 03 D3 7A 89 93 1D>)
+(   5,<2024-01-08 01:20:51.913 +0100>,<pzf20>,<MiniGua>,<dataserver>,<TopSpin 3.7.0>,
+      <changed status parameter F1 IN_F from 0.50 to 0.4
+       data hash MD5: 512 * 48
+       29 7C B7 18 7A 35 D1 3C 6A 67 03 D3 7A 89 93 1D>)
+(   6,<2024-01-08 01:20:57.937 +0100>,<pzf20>,<MiniGua>,<dataserver>,<TopSpin 3.7.0>,
+      <changed status parameter F1 IN_F from 0.40 to 0.5
+       data hash MD5: 512 * 48
+       29 7C B7 18 7A 35 D1 3C 6A 67 03 D3 7A 89 93 1D>)
+(   7,<2024-01-08 01:21:01.734 +0100>,<pzf20>,<MiniGua>,<dataserver>,<TopSpin 3.7.0>,
+      <changed status parameter F1 IN_F from 0.50 to 0.4
+       data hash MD5: 512 * 48
+       29 7C B7 18 7A 35 D1 3C 6A 67 03 D3 7A 89 93 1D>)
+(   8,<2024-01-08 01:21:49.563 +0100>,<pzf20>,<MiniGua>,<dataserver>,<TopSpin 3.7.0>,
+      <changed status parameter F1 IN_F from 0.40 to 0.5
+       data hash MD5: 512 * 48
+       29 7C B7 18 7A 35 D1 3C 6A 67 03 D3 7A 89 93 1D>)
+##END=
+
+$$ hash MD5
+$$ 90 99 C4 A4 C9 14 46 84 B8 29 6B 7B 6C 8A 4B B0
