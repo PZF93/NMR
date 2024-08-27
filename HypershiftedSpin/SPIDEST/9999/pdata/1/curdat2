@@ -1,0 +1,17 @@
+##TITLE= Parameter file, TopSpin 3.7.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 2	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= pzf20
+$$ 2024-01-12 23:04:41.319 +0100  pzf20@MiniGua
+$$ C:/Users/pzf20/SynologyDrive/manuscripts/HiddenSpins/HiddenSpinData/CEST/2309/pdata/1/curdat2
+$$ process C:\Bruker\TopSpin3.7.0\prog\mod\dataserver.exe
+##$DATPATH3= <C:/Users/pzf20/SynologyDrive/manuscripts/HiddenSpins/HiddenSpinData>
+##$DU3= <>
+##$EXPNO3= 2309
+##$NAME3= <CEST>
+##$PROCNO3= 111
+##$TYPE= <>
+##$USER3= <>
+##END=

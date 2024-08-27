@@ -1,0 +1,91 @@
+;noesyph
+;avance-version (12/01/11)
+;2D homonuclear correlation via dipolar coupling 
+;dipolar coupling may be due to noe or chemical exchange.
+;phase sensitive
+;run /home/pi/PZF/Polarizer6d7/HidSpin2D/HidSpin2D_mwTrig.py
+;28 is microwave triger (on: ^ / off: |), default: on
+;31 is reading triger for 29 and 30. When falling edge is detected, start reading 29 and 30 
+;port no.:      | 29 | 30 |
+;voltage level:   ^    ^    set DNP frequency
+;                 ^    |    set spin diffusion frequency
+;                 |    ^    increase spin diffusion frequency index
+;                 |    |    switch off microwave
+;
+;$CLASS=HighRes
+;$DIM=2D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+
+
+#include <Avance.incl>
+
+
+"in0=inf1"
+
+"d0=in0/2"
+;"d0=in0/2-4*p1/3.1415"
+;"acqt0=4*p1/3.1415"
+
+"cnst24=-cnst21"
+
+1 ze
+;--------Set uw frequency to DNP-----------------
+  10u setnmr3 ^ 29
+  10u setnmr3 ^ 30
+  10u setnmr3 | 31
+  10m
+  10u setnmr3 ^ 31
+  1m
+;------------------------------------------------
+  d6
+2 d1
+3 30m
+  "cnst29=360*cnst24*(d0+p1)"
+  4u ip6+cnst29
+  10m fq=cnst21:f1
+  p1 ph1+ph6
+  d0
+  p1 ph2
+  d7
+  1m setnmr3 | 28
+  d8 fq=cnst22:f1
+  1m setnmr3 ^ 28
+  d9
+  p3 ph3
+  go=2 ph31
+  d1 mc #0 to 2 F1PH(calph(ph1, +90), caldel(d0, +in0))
+exit
+
+
+ph1=0 2 
+ph2=0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2
+ph3=0 0 2 2 1 1 3 3
+ph6=0
+ph31=0 2 2 0 1 3 3 1 2 0 0 2 3 1 1 3
+
+
+;pl1 : f1 channel - power level for pulse (default)
+;p1 : f1 channel -  90 degree high power pulse
+;d0 : incremented delay (2D)
+;d1 : relaxation delay; 1-5 * T1
+;d8 : mixing time
+;inf1: 1/SW = 2 * DW
+;in0: 1/(1 * SW) = 2 * DW
+;nd0: 1
+;ns: 8 * n
+;ds: 16
+;td1: number of experiments
+;FnMODE: States-TPPI, TPPI, States or QSEQ
+
+
+;Processing
+
+;PHC0(F1): 90
+;PHC1(F1): -180
+;FCOR(F1): 1
+
+
+
+;$Id: noesyph,v 1.9 2012/01/31 17:49:28 ber Exp $

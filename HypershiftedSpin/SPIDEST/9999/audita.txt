@@ -1,0 +1,22 @@
+##TITLE= Audit trail, TopSpin 3.7.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= pzf20
+$$ C:/Users/pzf20/SynologyDrive/manuscripts/HiddenSpins/HiddenSpinData/CEST/9999/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2024-01-12 18:17:15.032 +0100>,<nmrsu>,<CZC5422SJ0>,<go4>,<TopSpin 3.5.7>,
+      <created by zg
+	started at 2024-01-12 16:14:12.623 +0100,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       A0 D1 29 C6 A7 FA 31 78 09 3F 9E CF FA C9 CD EC
+       data hash MD5: 512 * 121
+       D3 5F F4 08 B5 CA F3 EE 5C 75 9D DB BF 31 FA 5F>)
+(   2,<2024-08-27 22:02:28.879 +0200>,<pzf20>,<Daguagua>,<dirdata>,<TopSpin 3.7.0>,
+      <wrpa from 1 2309 "CEST" "C:/Users/pzf20/SynologyDrive/manuscripts/HiddenSpins/HiddenSpinData"
+       data hash MD5: 512 * 121
+       D3 5F F4 08 B5 CA F3 EE 5C 75 9D DB BF 31 FA 5F>)
+##END=
+
+$$ hash MD5
+$$ 18 B5 80 16 AE 40 B6 02 D2 67 8F 80 55 DE A5 D2

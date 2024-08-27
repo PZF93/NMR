@@ -1,0 +1,281 @@
+#*******************************************************************
+#
+# $Source: /sc/CvsTree/sc/gen/src/form/ased_acqu.form,v $
+#
+# Copyright (c) 1995 - 2008
+# BRUKER BioSpin GmbH
+# D-76287 Rheinstetten, Germany
+#
+# All Rights Reserved
+#
+#
+# $Id: ased_acqu.form,v 1.27.2.3 2014/05/05 13:10:49 nipo Exp $
+#*******************************************************************
+EDIT_PAR COMMAND FILE
+
+DI_MODE         LONG
+ED_ENTRY        ACQU
+ORDER           FILE
+
+
+HEADER		"====== General ======"
+NAME		PULPROG
+END
+NAME		TD
+END
+NAME		SW
+END
+T_NAME		SWH
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"SWH=SW*SFO1"
+		INV_REL "SW=SWH/SFO1"
+		UNIT	"Hz"
+		FORMAT	"%14.2f Hz"
+		TEXT	"sweep width"
+END
+T_NAME          AQ
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"AQ=aqcalc(SW,SFO1,TD,DIGTYP)"
+		INV_REL	"TD=tdcalc(SW,SFO1,1.0e6*AQ,DIGTYP)"
+		UNIT	"sec"
+		FORMAT	"%14.7f sec"
+                TEXT	"acquisition time"
+END
+NAME		RG
+END
+T_NAME          DW
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"DW=1/(2*SW*SFO1)"
+		INV_REL	"SW=1000000/(2*(0.005+DW)*SFO1)"
+		UNIT	"usec"
+		FORMAT	"%14.3f usec"
+		TEXT	"dwell time "
+END
+NAME		DE
+		FORMAT	"%14.2f usec"
+END
+T_NAME		BuildupTime
+		TYPE	R32
+		SUBRANGE 0.0 1e8
+		CLASS	ACQU
+		REL	"BuildupTime=l22*(d4+l24*(p2+1m))"
+		INV_REL	"D[0]=BuildupTime"
+		UNIT	"sec"
+		TEXT	"BuildupTime=l22*(d4+l24*(p2+1m))"
+		FORMAT	"%14.8f sec"
+		NONEDIT
+END
+T_NAME		d1
+		TYPE	R32
+		SUBRANGE 0.0 1e8
+		CLASS	ACQU
+		REL	"d1=BuildupTime/10"
+		INV_REL	"D[0]=d1"
+		UNIT	"sec"
+		TEXT		"time between scans"
+		FORMAT	"%14.8f sec"
+		NONEDIT
+END
+T_NAME		D2
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D2=D[2]"
+		INV_REL	"D[2]=D2"
+		UNIT	"sec"
+		FORMAT	"%14.9f sec"
+		TEXT	"delay 2"
+END
+T_NAME		D4
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D4=D[4]"
+		INV_REL	"D[4]=D4"
+		UNIT	"sec"
+		FORMAT	"%14.9f sec"
+		TEXT	"delay 4"
+END
+T_NAME		D5
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"D5=D[5]"
+		INV_REL	"D[5]=D5"
+		UNIT	"sec"
+		FORMAT	"%14.9f sec"
+		TEXT	"delay 5"
+END
+NAME		DS
+		TEXT	"number of dummy scans"
+END
+T_NAME		L21
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"L21=L[21]"
+		INV_REL	"L[21]=L21"
+		FORMAT	"%14.0f"
+		TEXT	"loop counter 21"
+END
+T_NAME		L22
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"L22=L[22]"
+		INV_REL	"L[22]=L22"
+		FORMAT	"%14.0f"
+		TEXT	"loop counter 22"
+END
+T_NAME		L23
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"L23=L[23]"
+		INV_REL	"L[23]=L23"
+		FORMAT	"%14.0f"
+		TEXT	"loop counter 23"
+END
+T_NAME		L24
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1e38
+		REL	"L24=L[24]"
+		INV_REL	"L[24]=L24"
+		FORMAT	"%14.0f"
+		TEXT	"loop counter 24"
+END
+NAME		NS
+		TEXT	"scans to execute"
+END
+HEADER		"======== CHANNEL f1 ========"
+NAME		SFO1
+		FORMAT	"%14.7f MHz"
+		TEXT	"frequency of ch. 1"
+END
+NAME		O1
+		FORMAT	"%14.2f Hz"
+		TEXT	"frequency of ch. 1"
+END
+T_NAME		O1P
+		TYPE	R64
+		CLASS	ACQU
+		SUBRANGE -1e38 1e38
+		REL	"O1P=O1/BF1"
+		INV_REL	"O1=O1P*BF1"
+		UNIT	"ppm"
+		FORMAT	"%14.3f ppm"
+		TEXT	"frequency of ch. 1"
+END
+NAME		NUC1
+		NONEDIT
+		TEXT	"nucleus for channel 1"
+END
+T_NAME		CNST21
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE -1e38 1e38
+		REL	"CNST21=CNST[21]"
+		INV_REL	"CNST[21]=CNST21"
+		FORMAT	"%14.7f"
+		TEXT	" "
+END
+NAME		FQ1LIST
+		TEXT "frequency list 1"
+END
+T_NAME		P1
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1.0e10
+		REL	"P1=P[1]"
+		INV_REL	"P[1]=P1"
+		UNIT	"usec"
+		FORMAT	"%14.3f usec"
+		TEXT		"f1 channel -  high power pulse"
+END
+T_NAME		P2
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1.0e10
+		REL	"P2=P[2]"
+		INV_REL	"P[2]=P2"
+		UNIT	"usec"
+		FORMAT	"%14.3f usec"
+		TEXT	"pulse 2"
+END
+T_NAME		P3
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0.0 1.0e10
+		REL	"P3=P[3]"
+		INV_REL	"P[3]=P3"
+		UNIT	"usec"
+		FORMAT	"%14.3f usec"
+		TEXT	"pulse 3"
+END
+T_NAME		PLW1
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0 123.18
+		REL	"PLW1=PLW[1]"
+		INV_REL	"PLW[1]=PLW1"
+		UNIT	"W"
+		FORMAT	"%14.5g W"
+		TEXT		"f1 channel - power level for pulse (default)"
+END
+T_NAME		PLdB1
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE -21.0054 1000
+		REL	"if(PLW[1]>0)PLdB1=-10*log(PLW[1])/LN10;else PLdB1=1000;"
+		INV_REL	"PLW[1]=0;if(PLdB1<1000)PLW[1]=pow(10.0,(-PLdB1)/10.0)"
+		UNIT	"dB"
+		FORMAT	"%14.2f dB"
+		TEXT	"power PL1 in dB"
+END
+T_NAME		PLW2
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0 123.18
+		REL	"PLW2=PLW[2]"
+		INV_REL	"PLW[2]=PLW2"
+		UNIT	"W"
+		FORMAT	"%14.5g W"
+		TEXT	"power PLW2 "
+END
+T_NAME		PLdB2
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE -21.0054 1000
+		REL	"if(PLW[2]>0)PLdB2=-10*log(PLW[2])/LN10;else PLdB2=1000;"
+		INV_REL	"PLW[2]=0;if(PLdB2<1000)PLW[2]=pow(10.0,(-PLdB2)/10.0)"
+		UNIT	"dB"
+		FORMAT	"%14.2f dB"
+		TEXT	"power PL2 in dB"
+END
+T_NAME		PLW3
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE 0 123.18
+		REL	"PLW3=PLW[3]"
+		INV_REL	"PLW[3]=PLW3"
+		UNIT	"W"
+		FORMAT	"%14.5g W"
+		TEXT	"power PLW3 "
+END
+T_NAME		PLdB3
+		TYPE	R32
+		CLASS	ACQU
+		SUBRANGE -21.0054 1000
+		REL	"if(PLW[3]>0)PLdB3=-10*log(PLW[3])/LN10;else PLdB3=1000;"
+		INV_REL	"PLW[3]=0;if(PLdB3<1000)PLW[3]=pow(10.0,(-PLdB3)/10.0)"
+		UNIT	"dB"
+		FORMAT	"%14.2f dB"
+		TEXT	"power PL3 in dB"
+END
