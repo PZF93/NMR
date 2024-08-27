@@ -1,0 +1,23 @@
+##TITLE= Audit trail, TopSpin 3.5 pl 7
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ /opt/topspin3.6.3/data/kirill/testing_cryo_magnet/2271/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2024-01-16 23:31:12.622 +0100>,<nmrsu>,<CZC5422SJ0>,<go4>,<TopSpin 3.5.7>,
+      <created by zg
+	started at 2024-01-16 18:48:29.984 +0100,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       A0 D1 29 C6 A7 FA 31 78 09 3F 9E CF FA C9 CD EC
+       data hash MD5: 2K * 48
+       F6 B7 B4 39 71 AA CD DA EB 2B 86 FB 79 50 08 3C>)
+$$ C:/Users/pzf20/SynologyDrive/manuscripts/HiddenSpins/HiddenSpinData/NOESY/2271/audita.txt
+(   2,<2024-06-06 17:15:30.804 +0200>,<pzf20>,<Daguagua>,<dataserver>,<TopSpin 3.7.0>,
+      <changed status parameter F2 DS from 0 to 384
+       data hash MD5: 2K * 48
+       F6 B7 B4 39 71 AA CD DA EB 2B 86 FB 79 50 08 3C>)
+##END=
+
+$$ hash MD5
+$$ 76 20 93 07 C9 66 E4 D7 68 1C 74 B9 4C 7D CD 3D

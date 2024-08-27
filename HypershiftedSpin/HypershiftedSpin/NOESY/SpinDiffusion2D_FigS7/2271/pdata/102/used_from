@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TopSpin 3.5 pl 7
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ 2024-01-16 19:02:28.571 +0100  nmrsu@CZC5422SJ0
+$$ /opt/topspin3.6.3/data/kirill/testing_cryo_magnet/2271/pdata/102/used_from
+$$ process /opt/topspin3.5pl7/prog/mod/proc1d
+##$CUREXP= <ser>
+##$DATPATH= </opt/topspin3.6.3/data/kirill>
+##$EXPNO= 2271
+##$NAME= <testing_cryo_magnet>
+##$PROCNO= 1
+##$PROCNO2= 2
+##END=
