@@ -1,0 +1,28 @@
+##TITLE= Parameter file, TopSpin 3.7.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= pzf20
+$$ 2024-08-30 14:34:33.460 +0200  pzf20@Daguagua
+$$ C:\Users\pzf20\SynologyDrive\manuscripts\HiddenSpins\HiddenSpinData/DNPBuilup/2299/pdata/1/clevels
+$$ process C:\Bruker\TopSpin3.7.0\prog\mod\edparproc.exe
+##$LEVELS= (0..255)
+-223025.689332643 -123903.160740357 -68835.0893001984 -38241.716277888
+-21245.39793216 -11802.9988512 -6557.221584 -3642.90088 3642.90088 6557.221584
+11802.9988512 21245.39793216 38241.716277888 68835.0893001984 123903.160740357
+223025.689332643 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+##$LEVSIGN= 3
+##$MAXLEV= 8
+##$METHOD= 0
+##$NEGBASE= -3642.90088
+##$NEGINCR= 1.8
+##$POSBASE= 3642.90088
+##$POSINCR= 1.8
+##END=

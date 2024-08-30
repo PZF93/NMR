@@ -1,0 +1,24 @@
+##TITLE= Parameter file, TopSpin 3.7.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= pzf20
+$$ 2024-08-30 14:34:05.094 +0200  pzf20@Daguagua
+$$ C:\Users\pzf20\SynologyDrive\manuscripts\HiddenSpins\HiddenSpinData/DNPBuilup/2298/acqu2
+$$ process C:\Bruker\TopSpin3.7.0\prog\mod\edparproc.exe
+##$ACQT0= 0
+##$BF1= 500.13
+##$FnILOOP= 0
+##$FnMODE= 0
+##$NUC1= <1H>
+##$NusJSP= 0
+##$NusT2= 1
+##$NusTD= 0
+##$O1= 2350.611
+##$ProjAngle= 0
+##$SFO1= 500.132350611
+##$SW= 9.99735368826195
+##$SW_h= 5000
+##$TD= 1024
+##END=
