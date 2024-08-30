@@ -1,0 +1,63 @@
+;zg multi presat
+;avance-version (13/09/2018)
+;Mathieu Baudin
+;Pseudo 2D sequence
+;
+;$CLASS=HighRes
+;$DIM=1D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+
+
+#include <Avance.incl>
+#include <Delay.incl>
+
+;define loopcounter anavpt
+"anavpt=512"
+
+;define loopcounter acqt0
+"acqt0=-p1*2/3.1416"
+
+"d3=d1-ns*(100u+p3)-aq-30m"
+
+1 ze
+lab1, d7
+lab2, (p1 ph29^ fq=cnst21 pl7):f1
+  (p1 ph29^ fq=cnst22 pl7):f1
+  1m
+  lo to lab2 times l22
+  lo to lab1 times l21
+  1u setnmr3 ^ 28
+2 d2
+  10m pl1:f1 setnmr3 | 28
+3 d5
+4 (p1 ph29^ fq=cnst25 pl1):f1
+  (p1 ph29^ fq=cnst26 pl1):f1
+  1m
+  lo to 4 times l24
+  lo to 3 times l23
+  1m pl3:f1 
+  1m fq=cnst23:f1
+5 100u
+  p3 ph1
+  go=5 ph31
+  30m wr #0 if #0 zd
+  d3
+  lo to 5 times td1
+  1u setnmr3 ^ 28
+exit
+
+
+ph1=0 1 2 3
+ph29=(360) 136 307 48 346 355 223 127 287 132 76 24 194 339 285 54 13 327 123 255 152 110 79 0 288 17 36 64 214 20 276 299 144
+ph31=0 1 2 3
+
+;pl1 : f1 channel - power level for pulse (default)
+;p1 : f1 channel -  high power pulse
+;d1 : relaxation delay; 1-5 * T1
+;NS: 1 * n, total number of scans: NS * TD0
+
+
+
+;$Id: zg,v 1.10 2009/07/02 16:40:47 ber Exp $

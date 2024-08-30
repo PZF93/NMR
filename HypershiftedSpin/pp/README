@@ -1,0 +1,6 @@
+zgpresat_sp_swp9.pzf -> SPIDEST
+NoesyphOffset_d8nomw.pzf -> 2D NOESY
+NoesyphOffsetecho_PWM.pzf -> 2D NOESY (with echo detection)
+NoesyphOffset1d.pzf -> 1D NOESY
+zg_multi_presat_f1_nomw.mb -> HypRes
+
